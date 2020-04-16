@@ -23,12 +23,14 @@
 
         display: inline-block;
         padding: 5%;
+        font-size: 60px;
     }
 
     .footerIcon:hover {
         text-decoration: none;
         color: white;
-        transform: 0.25s;
+        transform: scale(1.5rem) 0.25s !important;
+
     }
 
     html {
@@ -100,6 +102,7 @@
         font-size: 170%;
         padding-top: 10%;
         text-align: center;
+        display: none;
     }
 
     .skills {
@@ -128,7 +131,7 @@
 
     .button {
         border: solid white 1px;
-        margin: 0 42% !important;
+        margin: 0 30% !important;
     }
 
     .button:hover {
@@ -149,9 +152,55 @@
         display: inline-block;
     }
 
+    .large_rajat {
+        padding-top: 10rem;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .button_text {
+        display: inline-block;
+        font-size: 2rem !important;
+        color: white;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .button_text:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+    #home {
+        height: 100%;
+    }
+
     @media only screen and (max-device-width: 600px) {
         .image {
             display: block !important;
+            margin-top: 1.5rem;
+        }
+
+        .small {
+            display: block;
+        }
+
+        ul {
+            font-size: 0.9rem;
+        }
+
+        .medium {
+            display: none !important;
+        }
+
+        .d-flex {
+            display: none !important;
+        }
+
+        .skills {
+            font-size: 1.5rem;
         }
 
         .bg {
@@ -159,9 +208,41 @@
             height: 20%;
         }
 
+        .rajat {
+            display: block;
+        }
+
+        .centerf {
+            width: 100%;
+        }
+
+        .footerIcon {
+            font-size: 20px;
+        }
+
+        #home {
+            height: 70%;
+        }
+
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
         .button {
-            border: solid black 1px;
+            border-radius: 25px;
             margin: 0 30% !important;
+            background-color: cyan !important;
+        }
+
+        .button_text {
+            display: inline-block;
+            color: black;
+            font-size: 1.25rem !important;
+        }
+
+        .button_text:hover {
+            color: white;
         }
 
         .button:hover {
@@ -171,7 +252,10 @@
             border-radius: 5px;
             border: none;
             text-decoration: none;
-            font-size: 100px;
+        }
+
+        .large_rajat {
+            display: none;
         }
     }
 
@@ -193,13 +277,17 @@
 
 
     <!-- First Parallax Image with Logo Text -->
-    <div style="margin-bottom: 5%; height: 100%;" id="home">
+    <div style="margin-bottom: 5%;" id="home">
         <div class="bg">
+            <div class="center large_rajat">
+                Hello, I'm <span style="color: palevioletred;">Rajat Kumar</span><br>
+                I'm a Full Stack Developer <br> <br>
+            </div>
             <div class="rajat">
                 <span class="">RAJAT <span class="w3-hide-small">KUMAR</span> MISHRA</span>
             </div>
-            <div class="center button" style="margin: 5%;"><a style="text-decoration: none; font-size: 15px ;"
-                    href="#res">Take me There</a>!!</div>
+            <div class="center button" style="margin: 5%;"><a class="button_text"
+                    style="text-decoration: none; font-size: 15px ;" href="#res">Take me There</a></div>
         </div>
         <br>
         <div class="center image">
@@ -207,11 +295,11 @@
         </div>
     </div>
     <div id="res" class="center">
-        <a class="resume" href="Rajat_Resume_Final(2).pdf" download="resume.pdf">
+        <a class="resume" href="Rajat_Resume_Final(3).pdf" download="resume.pdf">
             <span>
                 <i class="fa fa-download" style="font-size: 60px;"></i>
             </span></a>
-        <a class="resume" href="Rajat_Resume_Final(2).pdf" download="resume.pdf">Download Resume</a>
+        <a class="resume" href="Rajat_Resume_Final(3).pdf" download="resume.pdf">Download Resume</a>
     </div>
     <!-- Container (About Section) -->
     <div id="about">
@@ -396,7 +484,8 @@
 
         <!-- Footer -->
         <footer>
-            <div class="d-flex">
+            <div class="d-flex medium">
+
                 <div class="d-md-flex flex-fill centerf">
                     <p>“The pessimist sees difficulty in every opportunity.<br>
                         The optimist sees opportunity in every difficulty.” <br>
@@ -422,6 +511,36 @@
                     <a class="footerIcon" href="https://www.instagram.com/rajk1121/">
                         <span>
                             <i class="fa fa-instagram" style="font-size:60px;"></i>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="small">
+                <div class="centerf">
+                    <p>“The pessimist sees difficulty in every opportunity.<br>
+                        The optimist sees opportunity in every difficulty.” <br>
+                        – Winston Churchill</p>
+                </div>
+                <div class="centerf">
+                    <a class="footerIcon" href="https://github.com/rajk1121">
+                        <span>
+                            <i class="fa fa-github-square"></i>
+                        </span>
+                    </a>
+                    <a class="footerIcon" href="https://www.linkedin.com/in/rajat-kumar-035100151">
+                        <span>
+                            <i class="fa fa-linkedin-square"></i>
+                        </span>
+                    </a>
+                    <a class="footerIcon" href="www.facebook.com">
+                        <span>
+                            <i class="fa fa-facebook-square"></i>
+                        </span>
+                    </a>
+                    <a class="footerIcon" href="https://www.instagram.com/rajk1121/">
+                        <span>
+                            <i class="fa fa-instagram"></i>
                         </span>
                     </a>
                 </div>
