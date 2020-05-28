@@ -33,6 +33,10 @@
 
     }
 
+    #body {
+        display: none;
+    }
+
     html {
 
         scroll-behavior: smooth;
@@ -277,312 +281,328 @@
 
 
     <!-- First Parallax Image with Logo Text -->
-    <div style="margin-bottom: 5%;" id="home">
-        <div class="bg">
-            <div class="center large_rajat">
-                Hello, I'm <span style="color: palevioletred;">Rajat Kumar</span><br>
-                I'm a Full Stack Developer <br> <br>
+    <div id="gif">
+        <img src="./loader-128x/Preloader_3.gif" alt="">
+    </div>
+    <div id="body">
+        <div style="margin-bottom: 5%;" id="home">
+            <div class="bg">
+                <div class="center large_rajat">
+                    Hello, I'm <span style="color: palevioletred;">Rajat Kumar</span><br>
+                    I'm a Full Stack Developer <br> <br>
+                </div>
+                <div class="rajat">
+                    <span class="">RAJAT <span class="w3-hide-small">KUMAR</span> MISHRA</span>
+                </div>
+                <div class="center button" style="margin: 5%;"><a class="button_text"
+                        style="text-decoration: none; font-size: 15px ;" href="#res">Take me There</a></div>
             </div>
-            <div class="rajat">
-                <span class="">RAJAT <span class="w3-hide-small">KUMAR</span> MISHRA</span>
+            <br>
+            <div class="center image">
+                <img src="r.png" width="50%" alt="">
             </div>
-            <div class="center button" style="margin: 5%;"><a class="button_text"
-                    style="text-decoration: none; font-size: 15px ;" href="#res">Take me There</a></div>
+        </div>
+        <div id="res" class="center">
+            <a class="resume" href="Rajat_Resume_Final(6).pdf" download="resume.pdf">
+                <span>
+                    <i class="fa fa-download" style="font-size: 60px;"></i>
+                </span></a>
+            <a class="resume" href="Rajat_Resume_Final(4).pdf" download="resume.pdf">Download Resume</a>
+        </div>
+        <!-- Container (About Section) -->
+        <div id="about">
+            <h3 class="center">ABOUT ME</h3>
+            <p class="center"><em>I love Coding</em></p>
+            <div class="center">
+                <h5>10<sup>th</sup> Class</h5>
+                <p style="color: darkgrey;">St.Marks Senior Secondry Public School, JanakPuri, New Delhi</p>
+                <p style="color: darkgrey;">Board : CBSE</p>
+                <p style="color: darkgrey;">CGPA : 9.0</p>
+            </div>
+            <div class="center">
+                <h5>12<sup>th</sup> Class</h5>
+                <p style="color: darkgrey;">St.Marks Senior Secondry Public School, JanakPuri, New Delhi</p>
+                <p style="color: darkgrey;">Board : CBSE</p>
+                <p style="color: darkgrey;">Percentage : 89.60%</p>
+            </div>
+            <div class="center">
+                <h5>Bachelor in Technology</h5>
+                <p style="color: darkgrey;">Maharaja Surajmal Institute Of Technology, JanakPuri, New Delhi</p>
+                <p style="color: darkgrey;">University : GGSIPU</p>
+                <p style="color: darkgrey;">CGPA : 9.012</p>
+            </div>
+            <div class="row">
+
+
+                <!-- Hide this text on small devices -->
+
+                <p class="center padding">Welcome to my website. I am passionate about my work. Because I love what I
+                    do, I have a steady source of motivation that drives me to do my
+                    best. I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so I
+                    have something to strive
+                    towards. I’m not comfortable with settling, and I’m always looking for an opportunity to do better
+                    and achieve
+                    greatness. I’m a people person. I love meeting new people and learning about their lives and their
+                    backgrounds.</p>
+
+            </div>
+            <p class="center skills">SKILLS</p>
+            <p class="center">Data Structutes And Algorithms</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" role="progressbar" style="width: 85%; " aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">85%</div>
+            </div>
+            <p class="center">Java</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" role="progressbar" style="width: 85%; " aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">80%</div>
+            </div>
+            <p class="center"><i class="fa fa-node-js"></i>NodeJS</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" role="progressbar" style="width: 80%; " aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">80%</div>
+            </div>
+            <p class="center">Django</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" role="progressbar" style="width: 75%; " aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">75%</div>
+            </div>
+            <p class="center">HTML, CSS</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" id="html_css" role="progressbar" style="width: 85%; " aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+            <p class="center">JavaScript</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" role="progressbar" style="width: 77%; " aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">77%</div>
+            </div>
+        </div>
+        <div>
+            <p class="center skills">TRAININGS</p>
+            <ul style="margin-left: 5%; margin-top:5%">
+                <li>PEPCODING</li>
+                <p> June 2019 | Delhi, India</p>
+                <ul>
+                    <li>
+                        Training under the DEV team to gain knowledge about Web Technologies.
+                    </li>
+                    <li>
+                        ExpressJS, NodeJS, MongoDB, ReactJS.
+                    </li>
+                </ul>
+            </ul>
+        </div>
+
+        <div>
+            <p class="center skills">INTERNSHIPS</p>
+            <ul style="margin-left: 5%; margin-top:5%">
+                <li>INTELLIFY</li>
+                <p> October 2019 - February 2020 | Delhi, India</p>
+                <ul>
+                    <li>
+                        Worked as a Backend Intern in Django for building a REST API for the required
+                        project.
+                    </li>
+                    <li>
+                        Got familiar with AWS services like S3, Elastic Beanstalk, Code Pipeline etc.
+                    </li>
+                    <li>
+                        Managed the SQL Database in PostgreSQL.
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <div>
+            <p class="center skills">PROJECTS</p>
+            <ul style="margin-left: 5%; margin-top:5%">
+                <li>RESTARAUNT WEB APPLICATION</li>
+                <ul>
+                    <li>Attempt to create a food web app where consumers can select their desired
+                        subscription plans with the facility of login and payment.</li>
+                    <li> Comprise of both front-end as well as back-end componnts including HTML, CSS, JS, Express,
+                        Node, MongoDB.
+                    </li>
+                    <li><a href="https://omnifoodraj.herokuapp.com/" target="blank">Click to open</a></li>
+                </ul>
+                <br>
+                <li>WHITE BOARD</li>
+                <ul>
+                    <li>Made using HTML, CSS, JavaScript and Canvas.</li>
+                    <li>It gives the option to write and erase the text on the board. </li>
+                    <li><a href="https://whiteboardme.herokuapp.com/" target="blank">Click to open</a></li>
+                </ul>
+                <br>
+                <li>MOVIE APP</li>
+                <ul>
+                    <li>Made using ReactJS</li>
+                    <li>Lists the movies on basis of differnt genres. User can like or dislike a movie and also can
+                        remove
+                        it from the list statically. </li>
+                    <li><a href="https://rajk1121.github.io/React-Movie-App/" target="blank">Click to open. After
+                            clicking,
+                            click on Navbar on the page</a></li>
+                </ul>
+                <br>
+                <li>COMMAND LINE INTERFACE</li>
+                <ul>
+                    <li>Made using NodeJS, chalk, figlet.</li>
+                    <li>It gives functionalities of various commands like creating a file, removing a file, listing the
+                        current directory etc. </li>
+                </ul>
+                <br>
+                <li>Task Manager (Command Line)</li>
+                <ul>
+                    <li>Made using NodeJS CLI.</li>
+                    <li>It gives the option add a task and to remove a task. </li>
+                </ul>
+                <br>
+
+            </ul>
         </div>
         <br>
-        <div class="center image">
-            <img src="r.png" width="50%" alt="">
-        </div>
-    </div>
-    <div id="res" class="center">
-        <a class="resume" href="Rajat_Resume_Final(6).pdf" download="resume.pdf">
-            <span>
-                <i class="fa fa-download" style="font-size: 60px;"></i>
-            </span></a>
-        <a class="resume" href="Rajat_Resume_Final(4).pdf" download="resume.pdf">Download Resume</a>
-    </div>
-    <!-- Container (About Section) -->
-    <div id="about">
-        <h3 class="center">ABOUT ME</h3>
-        <p class="center"><em>I love Coding</em></p>
-        <div class="center">
-            <h5>10<sup>th</sup> Class</h5>
-            <p style="color: darkgrey;">St.Marks Senior Secondry Public School, JanakPuri, New Delhi</p>
-            <p style="color: darkgrey;">Board : CBSE</p>
-            <p style="color: darkgrey;">CGPA : 9.0</p>
-        </div>
-        <div class="center">
-            <h5>12<sup>th</sup> Class</h5>
-            <p style="color: darkgrey;">St.Marks Senior Secondry Public School, JanakPuri, New Delhi</p>
-            <p style="color: darkgrey;">Board : CBSE</p>
-            <p style="color: darkgrey;">Percentage : 89.60%</p>
-        </div>
-        <div class="center">
-            <h5>Bachelor in Technology</h5>
-            <p style="color: darkgrey;">Maharaja Surajmal Institute Of Technology, JanakPuri, New Delhi</p>
-            <p style="color: darkgrey;">University : GGSIPU</p>
-            <p style="color: darkgrey;">CGPA : 9.012</p>
-        </div>
-        <div class="row">
-
-
-            <!-- Hide this text on small devices -->
-
-            <p class="center padding">Welcome to my website. I am passionate about my work. Because I love what I
-                do, I have a steady source of motivation that drives me to do my
-                best. I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so I
-                have something to strive
-                towards. I’m not comfortable with settling, and I’m always looking for an opportunity to do better
-                and achieve
-                greatness. I’m a people person. I love meeting new people and learning about their lives and their
-                backgrounds.</p>
-
-        </div>
-        <p class="center skills">SKILLS</p>
-        <p class="center">Data Structutes And Algorithms</p>
-        <div class="progress" style="margin: 4% 15%;">
-            <div class="progress-bar" role="progressbar" style="width: 85%; " aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100">85%</div>
-        </div>
-        <p class="center">Java</p>
-        <div class="progress" style="margin: 4% 15%;">
-            <div class="progress-bar" role="progressbar" style="width: 85%; " aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100">80%</div>
-        </div>
-        <p class="center"><i class="fa fa-node-js"></i>NodeJS</p>
-        <div class="progress" style="margin: 4% 15%;">
-            <div class="progress-bar" role="progressbar" style="width: 80%; " aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100">80%</div>
-        </div>
-        <p class="center">Django</p>
-        <div class="progress" style="margin: 4% 15%;">
-            <div class="progress-bar" role="progressbar" style="width: 75%; " aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100">75%</div>
-        </div>
-        <p class="center">HTML, CSS</p>
-        <div class="progress" style="margin: 4% 15%;">
-            <div class="progress-bar" role="progressbar" style="width: 85%; " aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100">85%</div>
-        </div>
-        <p class="center">JavaScript</p>
-        <div class="progress" style="margin: 4% 15%;">
-            <div class="progress-bar" role="progressbar" style="width: 77%; " aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100">77%</div>
-        </div>
-    </div>
-    <div>
-        <p class="center skills">TRAININGS</p>
-        <ul style="margin-left: 5%; margin-top:5%">
-            <li>PEPCODING</li>
-            <p> June 2019 | Delhi, India</p>
-            <ul>
-                <li>
-                    Training under the DEV team to gain knowledge about Web Technologies.
-                </li>
-                <li>
-                    ExpressJS, NodeJS, MongoDB, ReactJS.
-                </li>
-            </ul>
-        </ul>
-    </div>
-
-    <div>
-        <p class="center skills">INTERNSHIPS</p>
-        <ul style="margin-left: 5%; margin-top:5%">
-            <li>INTELLIFY</li>
-            <p> October 2019 - February 2020 | Delhi, India</p>
-            <ul>
-                <li>
-                    Worked as a Backend Intern in Django for building a REST API for the required
-                    project.
-                </li>
-                <li>
-                    Got familiar with AWS services like S3, Elastic Beanstalk, Code Pipeline etc.
-                </li>
-                <li>
-                    Managed the SQL Database in PostgreSQL.
-                </li>
-            </ul>
-        </ul>
-    </div>
-    <div>
-        <p class="center skills">PROJECTS</p>
-        <ul style="margin-left: 5%; margin-top:5%">
-            <li>RESTARAUNT WEB APPLICATION</li>
-            <ul>
-                <li>Attempt to create a food web app where consumers can select their desired
-                    subscription plans with the facility of login and payment.</li>
-                <li> Comprise of both front-end as well as back-end componnts including HTML, CSS, JS, Express,
-                    Node, MongoDB.
-                </li>
-                <li><a href="https://omnifoodraj.herokuapp.com/" target="blank">Click to open</a></li>
-            </ul>
-            <br>
-            <li>WHITE BOARD</li>
-            <ul>
-                <li>Made using HTML, CSS, JavaScript and Canvas.</li>
-                <li>It gives the option to write and erase the text on the board. </li>
-                <li><a href="https://whiteboardme.herokuapp.com/" target="blank">Click to open</a></li>
-            </ul>
-            <br>
-            <li>MOVIE APP</li>
-            <ul>
-                <li>Made using ReactJS</li>
-                <li>Lists the movies on basis of differnt genres. User can like or dislike a movie and also can remove
-                    it from the list statically. </li>
-                <li><a href="https://rajk1121.github.io/React-Movie-App/" target="blank">Click to open. After clicking,
-                        click on Navbar on the page</a></li>
-            </ul>
-            <br>
-            <li>COMMAND LINE INTERFACE</li>
-            <ul>
-                <li>Made using NodeJS, chalk, figlet.</li>
-                <li>It gives functionalities of various commands like creating a file, removing a file, listing the
-                    current directory etc. </li>
-            </ul>
-            <br>
-            <li>Task Manager (Command Line)</li>
-            <ul>
-                <li>Made using NodeJS CLI.</li>
-                <li>It gives the option add a task and to remove a task. </li>
-            </ul>
-            <br>
-
-        </ul>
-    </div>
-    <br>
-    <br>
-    <div>
-        <p class="center skills">POSITIONS OF RESPONSIBILITY</p>
+        <br>
         <div>
-            <ul style="margin-left: 5%; margin-top:5%">
-                <li>MENTOR, LEAN IN MSIT</li>
-                <ul>
-                    <li> February 2020 | Delhi, India</li>
-                    <li> Web Development Mentor</li>
+            <p class="center skills">POSITIONS OF RESPONSIBILITY</p>
+            <div>
+                <ul style="margin-left: 5%; margin-top:5%">
+                    <li>MENTOR, LEAN IN MSIT</li>
+                    <ul>
+                        <li> February 2020 | Delhi, India</li>
+                        <li> Web Development Mentor</li>
+                    </ul>
                 </ul>
-            </ul>
-        </div>
-        <div>
-            <ul style="margin-left: 5%; margin-top:5%">
-                <li>MENTOR</li>
-                <ul>
-                    <li> February 2020 | Delhi, India</li>
-                    <li> In Toyota Hackathon "Code For Safer India" 2020</li>
-                </ul>
-            </ul>
-        </div>
-        <div>
-            <ul style="margin-left: 5%; margin-top:5%">
-                <li>EVENT CO-ORDINATOR</li>
-                <ul>
-                    <li> January 2018 | Delhi, India</li>
-                    <li> In Avensis, MSIT Technical Fest 2018</li>
-                </ul>
-            </ul>
-        </div>
-        <div>
-            <ul style="margin-left: 5%; margin-top:5%">
-                <li>AARAMBH</li>
-                <ul>
-                    <li> 2018 | Delhi, India</li>
-                    <li> College Drama Society</li>
-                </ul>
-            </ul>
-        </div>
-        <div>
-            <ul style="margin-left: 5%; margin-top:5%">
-                <li>VOLUNTEER</li>
-                <ul>
-                    <li> February 2020 | Delhi, India</li>
-                    <li> At International Conference for Artificial Intelligence and Applications (ICAIA’20)</li>
-                </ul>
-            </ul>
-        </div>
-        <div>
-        </div>
-        <!-- Second Parallax Image with Portfolio Text -->
-
-
-
-        <!-- Modal for full size images on click-->
-
-
-        <!-- Third Parallax Image with Portfolio Text -->
-
-
-        <!-- Container (Contact Section) -->
-
-
-        <!-- Footer -->
-        <footer>
-            <div class="d-flex medium">
-
-                <div class="d-md-flex flex-fill centerf">
-                    <p>“The pessimist sees difficulty in every opportunity.<br>
-                        The optimist sees opportunity in every difficulty.” <br>
-                        – Winston Churchill</p>
-                </div>
-
-                <div class="d-md-flex flex-fill centerf">
-                    <a class="footerIcon" href="https://github.com/rajk1121">
-                        <span>
-                            <i class="fa fa-github-square" style="font-size:60px;"></i>
-                        </span>
-                    </a>
-                    <a class="footerIcon" href="https://www.linkedin.com/in/rajat-kumar-035100151">
-                        <span>
-                            <i class="fa fa-linkedin-square" style="font-size:60px;"></i>
-                        </span>
-                    </a>
-                    <a class="footerIcon" href="www.facebook.com">
-                        <span>
-                            <i class="fa fa-facebook-square" style="font-size:60px;"></i>
-                        </span>
-                    </a>
-                    <a class="footerIcon" href="https://www.instagram.com/rajk1121/">
-                        <span>
-                            <i class="fa fa-instagram" style="font-size:60px;"></i>
-                        </span>
-                    </a>
-                </div>
-
             </div>
-            <div class="small">
-                <div class="centerf">
-                    <p>“The pessimist sees difficulty in every opportunity.<br>
-                        The optimist sees opportunity in every difficulty.” <br>
-                        – Winston Churchill</p>
-                </div>
-                <div class="centerf">
-                    <a class="footerIcon" href="https://github.com/rajk1121">
-                        <span>
-                            <i class="fa fa-github-square"></i>
-                        </span>
-                    </a>
-                    <a class="footerIcon" href="https://www.linkedin.com/in/rajat-kumar-035100151">
-                        <span>
-                            <i class="fa fa-linkedin-square"></i>
-                        </span>
-                    </a>
-                    <a class="footerIcon" href="https://www.facebook.com">
-                        <span>
-                            <i class="fa fa-facebook-square"></i>
-                        </span>
-                    </a>
-                    <a class="footerIcon" href="https://www.instagram.com/rajk1121/">
-                        <span>
-                            <i class="fa fa-instagram"></i>
-                        </span>
-                    </a>
-                </div>
+            <div>
+                <ul style="margin-left: 5%; margin-top:5%">
+                    <li>MENTOR</li>
+                    <ul>
+                        <li> February 2020 | Delhi, India</li>
+                        <li> In Toyota Hackathon "Code For Safer India" 2020</li>
+                    </ul>
+                </ul>
             </div>
-            <div class="center"> Made with <i class="fa fa-heart" style="color: red;"></i> by <span
-                    style="color: palevioletred;">Rajat Kumar</span>
+            <div>
+                <ul style="margin-left: 5%; margin-top:5%">
+                    <li>EVENT CO-ORDINATOR</li>
+                    <ul>
+                        <li> January 2018 | Delhi, India</li>
+                        <li> In Avensis, MSIT Technical Fest 2018</li>
+                    </ul>
+                </ul>
             </div>
-        </footer>
+            <div>
+                <ul style="margin-left: 5%; margin-top:5%">
+                    <li>AARAMBH</li>
+                    <ul>
+                        <li> 2018 | Delhi, India</li>
+                        <li> College Drama Society</li>
+                    </ul>
+                </ul>
+            </div>
+            <div>
+                <ul style="margin-left: 5%; margin-top:5%">
+                    <li>VOLUNTEER</li>
+                    <ul>
+                        <li> February 2020 | Delhi, India</li>
+                        <li> At International Conference for Artificial Intelligence and Applications (ICAIA’20)</li>
+                    </ul>
+                </ul>
+            </div>
+            <div>
+            </div>
+            <!-- Second Parallax Image with Portfolio Text -->
 
 
+
+            <!-- Modal for full size images on click-->
+
+
+            <!-- Third Parallax Image with Portfolio Text -->
+
+
+            <!-- Container (Contact Section) -->
+
+
+            <!-- Footer -->
+            <footer>
+                <div class="d-flex medium">
+
+                    <div class="d-md-flex flex-fill centerf">
+                        <p>“The pessimist sees difficulty in every opportunity.<br>
+                            The optimist sees opportunity in every difficulty.” <br>
+                            – Winston Churchill</p>
+                    </div>
+
+                    <div class="d-md-flex flex-fill centerf">
+                        <a class="footerIcon" href="https://github.com/rajk1121">
+                            <span>
+                                <i class="fa fa-github-square" style="font-size:60px;"></i>
+                            </span>
+                        </a>
+                        <a class="footerIcon" href="https://www.linkedin.com/in/rajat-kumar-035100151">
+                            <span>
+                                <i class="fa fa-linkedin-square" style="font-size:60px;"></i>
+                            </span>
+                        </a>
+                        <a class="footerIcon" href="www.facebook.com">
+                            <span>
+                                <i class="fa fa-facebook-square" style="font-size:60px;"></i>
+                            </span>
+                        </a>
+                        <a class="footerIcon" href="https://www.instagram.com/rajk1121/">
+                            <span>
+                                <i class="fa fa-instagram" style="font-size:60px;"></i>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="small">
+                    <div class="centerf">
+                        <p>“The pessimist sees difficulty in every opportunity.<br>
+                            The optimist sees opportunity in every difficulty.” <br>
+                            – Winston Churchill</p>
+                    </div>
+                    <div class="centerf">
+                        <a class="footerIcon" href="https://github.com/rajk1121">
+                            <span>
+                                <i class="fa fa-github-square"></i>
+                            </span>
+                        </a>
+                        <a class="footerIcon" href="https://www.linkedin.com/in/rajat-kumar-035100151">
+                            <span>
+                                <i class="fa fa-linkedin-square"></i>
+                            </span>
+                        </a>
+                        <a class="footerIcon" href="https://www.facebook.com">
+                            <span>
+                                <i class="fa fa-facebook-square"></i>
+                            </span>
+                        </a>
+                        <a class="footerIcon" href="https://www.instagram.com/rajk1121/">
+                            <span>
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="center"> Made with <i class="fa fa-heart" style="color: red;"></i> by <span
+                        style="color: palevioletred;">Rajat Kumar</span>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                setTimeout(function () {
+                    document.getElementById('gif').style.display = 'none';
+                    document.getElementById('body').style.display = 'block';
+                }, 2000);
+            });
+        </script>
 
 </body>
 
