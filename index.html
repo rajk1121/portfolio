@@ -8,7 +8,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <style>
+    #about_me, #skills, #traning, #internships, #por,#projects{
+        opacity: 0
+        /* display: block !important; */
+    }
     .centerf {
         text-align: center;
         width: 50%;
@@ -344,15 +349,16 @@
             </div>
         </div>
         <div id="res" class="center">
-            <a class="resume" href="Rajat_Resume_Final(9).pdf" download="resume.pdf">
+            <a class="resume" href="Rajat_Sep_2020.pdf" download="resume.pdf">
                 <span>
                     <i class="fa fa-download" style="font-size: 60px;"></i>
                 </span></a>
-            <a class="resume" href="Rajat_Resume_Final(9).pdf" download="resume.pdf">Download Resume</a>
+            <a class="resume" href="Rajat_Sep_2020.pdf" download="resume.pdf">Download Resume</a>
         </div>
         <!-- Container (About Section) -->
         <div id="about">
-            <h3 class="center">ABOUT ME</h3>
+            <div id="about_me">
+                <h3 class="center">ABOUT ME</h3>
             <p class="center"><em>I love Coding</em></p>
             <div class="center">
                 <h5>10<sup>th</sup> Class</h5>
@@ -372,6 +378,7 @@
                 <p style="color: darkgrey;">University : GGSIPU</p>
                 <p style="color: darkgrey;">CGPA : 9.09</p>
             </div>
+            </div>
             <div id="particles-2-js"></div>
             <div class="row">
 
@@ -388,7 +395,8 @@
                     backgrounds.</p>
 
             </div>
-            <p class="center skills">SKILLS</p>
+            <div id="skills">
+                <p class="center skills">SKILLS</p>
             <p class="center">Data Structutes And Algorithms</p>
             <div class="progress" style="margin: 4% 15%;">
                 <div class="progress-bar" role="progressbar" style="width: 85%; " aria-valuenow="25" aria-valuemin="0"
@@ -419,10 +427,12 @@
                 <div class="progress-bar" role="progressbar" style="width: 80%; " aria-valuenow="25" aria-valuemin="0"
                     aria-valuemax="100">80%</div>
             </div>
+            </div>
         </div>
         <div>
             <div id="particles-3-js"></div>
-            <p class="center skills">TRAININGS</p>
+            <div id="traning">
+                <p class="center skills">TRAININGS</p>
             <ul style="margin-left: 5%; margin-top:5%">
                 <li>PEPCODING</li>
                 <p> June 2019 | Delhi, India</p>
@@ -435,9 +445,10 @@
                     </li>
                 </ul>
             </ul>
+            </div>
         </div>
 
-        <div>
+        <div id="internships">
             <p class="center skills">INTERNSHIPS</p>
             <ul style="margin-left: 5%; margin-top:5%">
                 <li>INTELLIFY</li>
@@ -474,7 +485,8 @@
         </div>
         <div>
             <div id="particles-4-js"></div>
-            <p class="center skills">PROJECTS</p>
+            <div id="projects">
+                <p class="center skills">PROJECTS</p>
             <ul style="margin-left: 5%; margin-top:5%">
             	<li>ZOOM CLONE</li>
                 <ul>
@@ -527,12 +539,14 @@
                 <br>
 
             </ul>
+            </div>
         </div>
         <div id="particles-5-js"></div>
         <br>
         <br>
         <div>
-            <p class="center skills">POSITIONS OF RESPONSIBILITY</p>
+            <div id="por">
+                <p class="center skills">POSITIONS OF RESPONSIBILITY</p>
             <div>
                 <ul style="margin-left: 5%; margin-top:5%">
                     <li>MENTOR, LEAN IN MSIT</li>
@@ -579,6 +593,7 @@
                 </ul>
             </div>
             <div>
+            </div>
             </div>
             <!-- Second Parallax Image with Portfolio Text -->
 
@@ -1205,6 +1220,46 @@
 
                 }, 2000);
             });
+            let $window = $(window);
+            let about_me = $('#about_me')
+            let skills = $('#skills')
+            let training = $('#traning')
+            let internships = $('#internships')
+            let projects = $('#projects')
+            let por = $('#por')
+            function isScrolledIntoView(elem, $window) {
+                var docViewTop = $window.scrollTop();
+                // console.log(docViewTop);
+                var docViewBottom = docViewTop + $window.height();
+
+                var elemTop = elem.offset().top;
+                var elemBottom = elemTop + elem.height();
+                // console.log(elemTop, elemBottom, docViewTop, docViewBottom)
+                return ((elemTop >= docViewTop)&& (elemBottom <= docViewBottom+(500)));
+            }
+            $(document).on('scroll',()=>{
+                 if (isScrolledIntoView(about_me, $window)) {
+                    about_me.addClass("animate__animated animate__fadeIn")
+                }
+                if (isScrolledIntoView(skills, $window)) {
+                    skills.addClass("animate__animated animate__bounceIn")
+                }
+                if (isScrolledIntoView(training, $window)) {
+                    training.addClass("animate__animated animate__fadeIn")
+                }
+                if (isScrolledIntoView(internships, $window)) {
+                    internships.addClass("animate__animated animate__fadeInUp")
+                }
+                
+                if (isScrolledIntoView(projects, $window)) {
+                    projects.addClass("animate__animated animate__fadeIn")
+                }
+                if (isScrolledIntoView(por, $window)) {
+                    por.addClass("animate__animated animate__bounceIn")
+                }
+
+            })
+
 	var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
