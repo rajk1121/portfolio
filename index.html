@@ -10,9 +10,23 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <style>
-    #about_me, #skills, #traning, #internships, #por,#projects{
+    #about_me, #skills, #traning, #internships, #por,#projects, #navbar{
         opacity: 0
         /* display: block !important; */
+    }
+    a{
+        color: #fff !important;
+    }
+    #navbar{
+        text-align: center;
+        background-color: pink;
+        position: fixed;
+        width: 100%;
+        height: 48px;
+        z-index: 5;
+        padding-top: 15px;
+        font-size: 15px;
+        margin-top: -8px !important;
     }
     .centerf {
         text-align: center;
@@ -211,6 +225,9 @@
             display: block !important;
             margin-top: 1.5rem;
         }
+        #navbar{
+            margin-left: -8px !important;
+        }
 
 
 
@@ -328,6 +345,11 @@
         <img src="./loader-128x/Preloader_3.gif" alt="">
     </div>
     <div id="body">
+        <div id='navbar'>
+            Hello, I'm <span style="color: palevioletred;">Rajat Kumar</span>
+            <a href="" class="Typewrite" data-period="2000" data-type='[ "Welcome to my Website", "I ❤️ to Code.", "I ❤️ to Solve.", "I ❤️ to Develop." ]'>
+        
+        </div>
         <div id="particles-js"></div>
         <div style="margin-bottom: 5%;" id="home">
             <div class="bg">
@@ -349,11 +371,11 @@
             </div>
         </div>
         <div id="res" class="center">
-            <a class="resume" href="Rajat_Sep_2020.pdf" download="resume.pdf">
+            <a class="resume" href="Rajat_Sep_2020.pdf" style="color: grey !important;" download="resume.pdf">
                 <span>
                     <i class="fa fa-download" style="font-size: 60px;"></i>
                 </span></a>
-            <a class="resume" href="Rajat_Sep_2020.pdf" download="resume.pdf">Download Resume</a>
+            <a class="resume" href="Rajat_Sep_2020.pdf" style="color: grey !important;" download="resume.pdf">Download Resume</a>
         </div>
         <!-- Container (About Section) -->
         <div id="about">
@@ -1227,6 +1249,8 @@
             let internships = $('#internships')
             let projects = $('#projects')
             let por = $('#por')
+            let large_rajat = $('.large_rajat')
+            let navbar = $('#navbar')
             function isScrolledIntoView(elem, $window) {
                 var docViewTop = $window.scrollTop();
                 // console.log(docViewTop);
@@ -1238,6 +1262,16 @@
                 return ((elemTop >= docViewTop)&& (elemBottom <= docViewBottom+(500)));
             }
             $(document).on('scroll',()=>{
+                if(large_rajat.offset().top+large_rajat.height()<=$window.scrollTop()){
+                    if(navbar.hasClass('animate__animated animate__fadeOut'))
+                        navbar.removeClass('animate__animated animate__fadeOut')
+                    navbar.addClass('animate__animated animate__fadeIn')
+                }else{
+                    if(navbar.hasClass("animate__animated animate__fadeIn")){
+                            navbar.removeClass('animate__animated animate__fadeIn')
+                        navbar.addClass('animate__animated animate__fadeOut')
+                    }
+                }
                  if (isScrolledIntoView(about_me, $window)) {
                     about_me.addClass("animate__animated animate__fadeIn")
                 }
@@ -1303,6 +1337,12 @@
 
     window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
+            var toRotate = elements[0].getAttribute('data-type');
+            var period = elements[0].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[0], JSON.parse(toRotate), period);
+            }
+            var elements = document.getElementsByClassName('Typewrite');
             var toRotate = elements[0].getAttribute('data-type');
             var period = elements[0].getAttribute('data-period');
             if (toRotate) {
