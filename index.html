@@ -1267,7 +1267,7 @@
                 var elemTop = elem.offset().top;
                 var elemBottom = elemTop + elem.height();
                 // console.log(elemTop, elemBottom, docViewTop, docViewBottom)
-                return ((elemTop >= docViewTop)&& (elemBottom <= docViewBottom+(500)));
+                return (elemTop <= docViewBottom);
             }
             $(document).on('scroll',()=>{
                 if(large_rajat.offset().top+large_rajat.height()<=$window.scrollTop()){
